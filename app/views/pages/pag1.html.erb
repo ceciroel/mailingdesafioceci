@@ -1,0 +1,13 @@
+<h1>Pages#pag1</h1>
+<p>Find me in app/views/pages/pag1.html.erb</p>
+
+<!-- Version Ruby -->
+<%= link_to "click-me", "#", data: {confirm: '¿are you sure' %>}
+<a href="<%= pages_page2_path %>" data-remote="true"> load movies </a>
+
+
+<div id='app'>
+	<span>Load all the movies!</span>
+</div>
+
+<%= link_to 'add movie', movies_path(movie: {title: 'horror'}), method: :post, remote: true %>
